@@ -1,0 +1,63 @@
+.button-row button,
+.button-row a {
+  margin-right: 8px;
+  width: 200px;
+
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.goback{
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    font-size: 35px;
+    
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    padding: 2%;
+    text-align: center;
+    border-radius: 30px;
+    width: 80%;
+    height: 80%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.scrollPainel{
+    height: 50%;
+}
+
+.confirm_button{
+    width: 300px;
+    height: 50px;
+    font-size: 32px;
+}
+
+.tabs{
+    height: 50%;
+    overflow: auto;
+}
+.example-container {
+    width: 70%;
+   
+    
+    
+  }

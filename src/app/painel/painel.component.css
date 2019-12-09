@@ -1,0 +1,67 @@
+.example-container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }
+
+  .navigator{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: azure;
+    height: 100%;
+  }
+
+  .navigator-settings{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: azure;
+    height: 100%;
+  }
+
+  .contact-button{
+      margin-top: 130%;
+      align-self: center;
+      border-radius: 30px;
+      width: 150px;
+  }
+
+  .title{
+      margin-top: 20%;
+      margin-bottom: 40%;
+  }
+
+  .sidenav-Right{
+      width: 18%;
+      background-color: #3f8c96;
+  }
+
+.button-content{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.buttun{
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+  .sidenav-Left{
+    width: 18%;
+}
+  

@@ -17,13 +17,16 @@ import {
   MatTooltipModule,
   MatTableModule,
   MatPaginatorModule,
-  MatCardModule
+  MatCardModule,
+  MatTabsModule,
+
 
 } from '@angular/material';
 
 
 const MaterialComponents = [
   MatButtonModule,
+  MatTabsModule,
       MatToolbarModule,
       MatCardModule,
       MatIconModule,

@@ -1,21 +1,21 @@
 <div class="container">
 <div class="box">
-    <h1>Login Logo</h1>
+    <h1>DocWay</h1>
     <div class="example-container">
         <mat-form-field appearance="outline">
           <mat-label>Email</mat-label>
-          <input matInput placeholder="Placeholder">
+          <input matInput placeholder="email@email.com">
         </mat-form-field>
         </div>
     <div class="example-container">
         <mat-form-field appearance="outline" >
           <mat-label>Password</mat-label>
-          <input matInput placeholder="Placeholder" type="password">  
+          <input matInput placeholder="password" type="password">  
         </mat-form-field>
         </div>    
     <div class="button-row">
-        <button mat-stroked-button color="warn">Register</button>
-        <button mat-raised-button color="primary">Login</button>   
+        <button mat-stroked-button color="warn" (click)="goRegister()">Register</button> 
+        <button mat-raised-button color="primary" (click)="goPainel()">Login</button>   
     </div>
     
 </div>
