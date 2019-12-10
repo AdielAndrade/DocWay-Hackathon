@@ -9,7 +9,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { MaterialModule } from './material/material.module';
 import {ScrollingModule} from '@angular/cdk/scrolling';
-import { PainelComponent } from './painel/painel.component'
+import { PainelComponent } from './painel/painel.component';
+import { HomePageComponent } from './home-page/home-page.component'
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { PainelComponent } from './painel/painel.component'
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    PainelComponent
+    PainelComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
