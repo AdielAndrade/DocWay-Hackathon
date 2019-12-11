@@ -6,7 +6,7 @@
       <h1 class="title">DOCWAY</h1>
 
       <button mat-button> <div class="button-content"><mat-icon aria-label="Example home icon">home</mat-icon> MEDICS</div> </button>
-      <button  mat-button> <div class="button-content"><mat-icon aria-label="Example home icon">people</mat-icon> ABOUT US</div> </button>
+      <button  mat-button (click)="goAboutUs()"> <div class="button-content"><mat-icon aria-label="Example home icon">people</mat-icon> ABOUT US</div> </button>
 
      
 
@@ -33,7 +33,7 @@
 
           <button class="buttonO" mat-button>Latest Hires</button>
       
-          <button class="buttonO" mat-button>Sing Out</button>
+          <button (click)="logout()" class="buttonO" mat-button>Sing Out</button>
           
     
         </div> 
