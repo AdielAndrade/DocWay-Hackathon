@@ -1,16 +1,37 @@
 <body>
   <div>
 
-    <img src="../../assets/images/doc.png" alt="home image doctor" id="image-doctor">
-    <img src="../../assets/images/pc.png" alt="notebook image" id="image-notebook">
+    <mat-icon class="position" id="menu">menu</mat-icon>
+    <img src="../../assets/images/logo.png" alt="logo" class="position"  id="logo">
 
-    <p id="text-header">
+    <p class="acharnome" id="login">
+      <b>Login</b>
+    </p>
+
+    <p class="acharnome" id="singin">
+        <b>Sing In</b>
+    </p>
+
+    <div class="position" id="doctors">
+      <p class="doctors-info" id="amount-doctors"><b>12.544</b></p>
+      <p class="doctors-info">Registered Doctor</p>
+    </div>
+
+    <img src="../../assets/images/doc.png" alt="home image doctor" id="image-doctor">
+    <img src="../../assets/images/pc.png" alt="notebook image" class="position" id="image-notebook">
+         
+    <p class="position" id="text-header">
       <b>DocWay</b> is a web platform that<br>
       helps hospitals to find and <b>hire doctors</b><br>
       in a way that is <b>quick</b> and <b>easy</b>.
     </p>
     
-    <button mat-raised-button id="view-more"><b>View more</b></button>
+    <button 
+      mat-raised-button 
+      class="position"
+      id="view-more"
+      onclick=""><b>View more</b>
+    </button>
 
   </div>
 </body>
