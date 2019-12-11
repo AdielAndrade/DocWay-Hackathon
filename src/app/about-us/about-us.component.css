@@ -30,6 +30,7 @@ body {
 #text-about {
     color: #51B0B8;
     font-display: inherit;
+    margin-bottom: 0%;
 }
 
 #logo {
@@ -37,4 +38,10 @@ body {
     width: 25%;
     left: 38%;
     padding-top: 2%;
+}
+
+#final-text {
+    color: #51B0B8;
+    margin-top: 0.2%;
+    left: 2%;
 }
