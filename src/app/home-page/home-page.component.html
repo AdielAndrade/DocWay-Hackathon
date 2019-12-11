@@ -3,17 +3,15 @@
 
     <img src="../../assets/images/logo.png" alt="logo" class="position"  id="logo">
 
-    <a class="acharnome" 
-       id="login"
-       href="../login/login.component.html">
-      <b>Login</b>
-    </a>
+   <button mat-button id="login" 
+                      class="acharnome"
+                      (click)="goLogin()"><b>Sing In</b>
+    </button>
 
-    <a class="acharnome" 
-       id="singin"
-       href="../register/register.component.html">
-        <b>Sing In</b>
-    </a>
+   <button mat-button id="singin" 
+                      class="acharnome"
+                      (click)="goRegister()"><b>Sing Up</b>
+    </button>
 
     <div class="position" id="doctors">
       <p class="doctors-info" id="amount-doctors"><b>12.544</b></p>

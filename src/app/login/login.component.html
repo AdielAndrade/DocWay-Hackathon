@@ -17,7 +17,7 @@
                 </mat-form-field>
                 </div>    
             <div > 
-                <button mat-raised-button color="primary" class="button" (click)="goPainel()">LOGIN</button>   
+                <button mat-raised-button class="button" (click)="goPainel()">SING IN</button>   
             </div>
             
         </div>
@@ -28,10 +28,16 @@
         >
 
         <div class="registerPainel">
-          <h1 class="titleR">Hello, buddy!</h1>
-          <h3 class="subtitleR">Enter your personal details</h3>
-         
-          <h3 class="subtitleR">and start journey with us</h3>
+          <input type="image" 
+                src="../../assets/images/logo.png" 
+                 id="logo"
+                 (click)="goHome()">
+
+          <h1 class="titleR">Hello!</h1>
+
+          <h3 class="subtitleR">Enter with your information, describle</h3>  
+          <h3 class="subtitleR">your profile and be the hand that</h3>
+          <h3 class="subtitleR">will help others.</h3>
       
           <button mat-stroked-button  class="singUp" (click)="goRegister()">SING UP</button>
         </div>

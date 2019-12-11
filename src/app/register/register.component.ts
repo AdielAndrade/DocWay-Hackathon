@@ -20,6 +20,10 @@ export class RegisterComponent implements OnInit {
     return this.value === "2"
   }
 
+  goHome() {
+    this._router.navigate(['/home'])
+  }      
+
   ngOnInit() {
   }
 

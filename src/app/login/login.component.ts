@@ -13,7 +13,10 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-
+  goHome() {
+    this._router.navigate(['/home'])
+  }
+  
   goRegister(){
     this._router.navigate(['/register'])
   }
