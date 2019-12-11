@@ -10,7 +10,8 @@ import { RegisterComponent } from './register/register.component';
 import { MaterialModule } from './material/material.module';
 import { ScrollingModule} from '@angular/cdk/scrolling';
 import { PainelComponent } from './painel/painel.component';
-import { HomePageComponent } from './home-page/home-page.component'
+import { HomePageComponent } from './home-page/home-page.component';
+import { AboutUsComponent } from './about-us/about-us.component'
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { HomePageComponent } from './home-page/home-page.component'
     LoginComponent,
     RegisterComponent,
     PainelComponent,
-    HomePageComponent
+    HomePageComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
