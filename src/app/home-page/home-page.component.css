@@ -79,10 +79,11 @@ body {
 
 #doctors {
     width: 26%;
-    height: 20%;
+    height: 17%;
     left: 12%;
     top: 70%;
-    border-radius: 10%;
+    border-radius: 20px;
+    background-color: #F8F9FB;
     box-shadow: 1px 0px 5px -2px #51B0B8;
 }
 
@@ -96,5 +97,21 @@ body {
 }
 
 #amount-doctors {
-    font-size: 3vm;
+    margin-top: 2%;
+    margin-left: 35%;
+    margin-bottom: 0%;
+    font-size: 4.5vmax;
+    left: 2%;
+}
+
+#registered {
+    font-size: 1vmax;
+    margin-left: 50%;
+    margin-top: -1%;
+}
+
+#stethoscope {
+    width: 5%;
+    top: 72%;
+    left: 15%
 }
