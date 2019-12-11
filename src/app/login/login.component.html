@@ -1,23 +1,43 @@
-<div class="container">
-<div class="box">
-    <h1>DocWay</h1>
-    <div class="example-container">
-        <mat-form-field appearance="outline">
-          <mat-label>Email</mat-label>
-          <input matInput placeholder="email@email.com">
-        </mat-form-field>
+
+    <mat-grid-list cols=10 rowHeight="100%">
+        <mat-grid-tile
+        [colspan]=7>
+        <div class="login">
+            <h1 class="title">Sing in to DocWay</h1>
+            <div >
+                <mat-form-field appearance="fill" class="input" >
+                  <mat-label>Email</mat-label >
+                  <input matInput placeholder="email@email.com"  >
+                </mat-form-field>
+                </div>
+            <div >
+                <mat-form-field appearance="fill"  class="input">
+                  <mat-label>Password</mat-label>
+                  <input matInput placeholder="password" type="password"  >  
+                </mat-form-field>
+                </div>    
+            <div > 
+                <button mat-raised-button color="primary" class="button" (click)="goPainel()">LOGIN</button>   
+            </div>
+            
         </div>
-    <div class="example-container">
-        <mat-form-field appearance="outline" >
-          <mat-label>Password</mat-label>
-          <input matInput placeholder="password" type="password">  
-        </mat-form-field>
-        </div>    
-    <div class="button-row">
-        <button mat-stroked-button color="warn" (click)="goRegister()">Register</button> 
-        <button mat-raised-button color="primary" (click)="goPainel()">Login</button>   
-    </div>
-    
-</div>
-</div>
+      </mat-grid-tile>
+      <mat-grid-tile
+        [colspan]=3
+        class="register"
+        >
+
+        <div class="registerPainel">
+          <h1 class="titleR">Hello, buddy!</h1>
+          <h3 class="subtitleR">Enter your personal details</h3>
+         
+          <h3 class="subtitleR">and start journey with us</h3>
+      
+          <button mat-stroked-button  class="singUp" (click)="goPainel()">SING UP</button>
+        </div>
+        
+      </mat-grid-tile>
+        
+        
+      </mat-grid-list>
 
