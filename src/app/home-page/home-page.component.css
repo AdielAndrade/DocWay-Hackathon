@@ -1,4 +1,49 @@
-doctor-image {
-    float: left;
+body {
+    background-color: #F8F9FB;
+   /* font-size: 62.5%; */
+}
+
+#image-doctor {
     width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+#image-notebook {
+    position: absolute;
+    left: 35%;
+    top: 46%;
+    width: 33%;
+    z-index: 2;
+}
+
+#text-header {
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    color: #F8F9FB;
+    font-size: 2.4vmax;
+    font-family: 'Trebuchet MS', 
+        'Lucida Sans Unicode', 
+        'Lucida Grande', 
+        'Lucida Sans', 
+        Arial, sans-serif;
+    z-index: 2;
+}
+
+#view-more {
+    position: absolute;
+    left: 25%;
+    top: 47%;
+    color: #51B0B8;
+    font-family: 'Trebuchet MS', 
+        'Lucida Sans Unicode', 
+        'Lucida Grande', 
+        'Lucida Sans', 
+        Arial, sans-serif;
+    border-radius: 20px 20px 20px;
+    width: 8%;
+    z-index: 2;
+
+
 }
