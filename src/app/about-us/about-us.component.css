@@ -1,0 +1,40 @@
+body {
+    background-color: #F8F9FB;
+}
+
+#text {
+    padding-left: 45%;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    color: #51B0B8;
+    font-family: 'Trebuchet MS', 
+        'Lucida Sans Unicode', 
+        'Lucida Grande', 
+        'Lucida Sans', 
+        Arial, sans-serif;
+}
+
+#image {
+    width: 48%;
+    position: absolute;
+    left: 24%;
+}
+
+.container-text {
+    position: absolute;
+    width: 45%;
+    left: 25%;
+    top: 63%;
+}
+
+#text-about {
+    color: #51B0B8;
+    font-display: inherit;
+}
+
+#logo {
+    position: absolute;
+    width: 25%;
+    left: 38%;
+    padding-top: 2%;
+}
