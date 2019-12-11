@@ -8,7 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { MaterialModule } from './material/material.module';
-import {ScrollingModule} from '@angular/cdk/scrolling';
+import { ScrollingModule} from '@angular/cdk/scrolling';
 import { PainelComponent } from './painel/painel.component';
 import { HomePageComponent } from './home-page/home-page.component'
 

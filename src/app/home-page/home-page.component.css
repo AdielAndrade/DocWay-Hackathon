@@ -1,0 +1,118 @@
+body {
+    background-color: #F8F9FB;
+}
+
+.position {
+    position: absolute;
+    z-index: 2;
+}
+
+#image-doctor {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+#image-notebook {
+    left: 35%;
+    top: 46%;
+    width: 33%;
+}
+
+#text-header {
+    left: 12%;
+    top: 20%;
+    color: #F8F9FB;
+    font-size: 2.4vmax;
+    font-family: 'Trebuchet MS', 
+        'Lucida Sans Unicode', 
+        'Lucida Grande', 
+        'Lucida Sans', 
+        Arial, sans-serif;
+}
+
+#view-more {
+    left: 25%;
+    top: 47%;
+    color: #51B0B8;
+    font-family: 'Trebuchet MS', 
+        'Lucida Sans Unicode', 
+        'Lucida Grande', 
+        'Lucida Sans', 
+        Arial, sans-serif;
+    border-radius: 20px 20px 20px;
+    width: 8%;
+}
+
+#menu {
+    color: #F8F9FB;
+    left: 5%;
+    top: 5%;
+}
+
+#logo {
+    width: 5%;
+    left: 12%;
+    top: 5%
+}
+
+.acharnome {
+    position: absolute;
+    z-index: 2;
+    top: 2%;
+    color: #F8F9FB;
+    font-size: 1vm;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 
+        'Lucida Sans Unicode', 
+        'Lucida Grande', 
+        'Lucida Sans', 
+        Arial, sans-serif;
+}
+
+#login {
+    left: 80%;
+}
+
+#singin {
+    left: 86%;
+}
+
+#doctors {
+    width: 26%;
+    height: 17%;
+    left: 12%;
+    top: 70%;
+    border-radius: 20px;
+    background-color: #F8F9FB;
+    box-shadow: 1px 0px 5px -2px #51B0B8;
+}
+
+.doctors-info {
+    color: #51B0B8;
+    font-family: 'Trebuchet MS', 
+        'Lucida Sans Unicode', 
+        'Lucida Grande', 
+        'Lucida Sans', 
+        Arial, sans-serif;
+}
+
+#amount-doctors {
+    margin-top: 2%;
+    margin-left: 35%;
+    margin-bottom: 0%;
+    font-size: 4.5vmax;
+    left: 2%;
+}
+
+#registered {
+    font-size: 1vmax;
+    margin-left: 50%;
+    margin-top: -1%;
+}
+
+#stethoscope {
+    width: 5%;
+    top: 72%;
+    left: 15%
+}
