@@ -3,12 +3,19 @@
   <mat-sidenav class="sidenav-Right" opened mode="side">
       <div class="navigator">
 
-      <h1 class="title">DOCWAY</h1>
+      <img src="../../assets/images/logo.png" alt="docway logo" id="logo">
+      <div id="menu">
 
-      <button mat-button> <div class="button-content"><mat-icon aria-label="Example home icon">home</mat-icon> MEDICS</div> </button>
-      <button  mat-button (click)="goAboutUs()"> <div class="button-content"><mat-icon aria-label="Example home icon">people</mat-icon> ABOUT US</div> </button>
+        <button mat-button> 
+          <div class="button-content">
+            <mat-icon aria-label="Example home icon">home</mat-icon>MEDICS</div> </button>
+  
+        <button  mat-button (click)="goAboutUs()"> 
+          <div class="button-content">
+            <mat-icon aria-label="Example home icon">people</mat-icon>ABOUT US</div> </button>
 
-     
+      </div>
+
 
     </div> 
 
@@ -41,13 +48,14 @@
   <div class="main-content">
     <h1 class="main-title">Search for doctors ...</h1>
     <div class="seach">
-        <mat-form-field appearance="fill"  class="input1">
-          <mat-label>Specialization</mat-label>
+        <mat-form-field appearance="outline" class="input1">
+          <mat-label >Specialization</mat-label>
           <input matInput placeholder="Ex. Cardiologist" >  
         </mat-form-field>
 
         <h3 class="and">and </h3>
-        <mat-form-field appearance="fill"  class="input2">
+       
+        <mat-form-field appearance="outline" class="input2">
           <mat-label>City</mat-label>
           <input matInput placeholder="Campina Grande"   >  
           </mat-form-field>
