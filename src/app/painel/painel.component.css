@@ -31,6 +31,17 @@
     height: 100%;
   }
 
+.seach{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.main-content{
+  display: flex;
+  flex-direction: column;
+}
+
   .contact-button{
       margin-top: 130%;
       align-self: center;
@@ -46,6 +57,7 @@
   .sidenav-Right{
       width: 18%;
       background-color: #3f8c96;
+      border-width: 0px;
   }
 
 .button-content{
@@ -56,6 +68,38 @@
     
 }
 
+.buttonO{
+  color: #3f8c96;
+  font-size: 20px;
+  display: flex;
+  
+  align-items: right;
+  justify-content: flex-end;
+  font-size: 15px;
+   
+}
+
+.profile{
+  margin-top: 10%;
+  margin-bottom: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+
+
+}
+
+.name{
+  color: #3f8c96;
+  font-size: 20px;
+  display: flex;
+  align-items: right;
+  justify-content: flex-end;
+  font-size: 17px;
+  font-weight: 500;
+}
+
 .buttun{
     margin-bottom: 15px;
     margin-left: 15px;
@@ -63,5 +107,6 @@
 
   .sidenav-Left{
     width: 18%;
+    border-width: 0ch ;
 }
   

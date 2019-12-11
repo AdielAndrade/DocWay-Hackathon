@@ -5,28 +5,50 @@
 
       <h1 class="title">DOCWAY</h1>
 
-      <button class="button" mat-button> <div class="button-content"><mat-icon aria-label="Example home icon">home</mat-icon> HOME</div> </button>
-      <button class="button" mat-button> <div class="button-content"><mat-icon aria-label="Example home icon">people</mat-icon> MEDICS</div> </button>
+      <button mat-button> <div class="button-content"><mat-icon aria-label="Example home icon">home</mat-icon> MEDICS</div> </button>
+      <button  mat-button> <div class="button-content"><mat-icon aria-label="Example home icon">people</mat-icon> ABOUT US</div> </button>
 
-      <button mat-raised-button class="contact-button">CONTACT US</button>  
+     
 
     </div> 
 
-  </mat-sidenav>
+  </mat-sidenav> 
 
 
 
   <mat-sidenav class="sidenav-Left" opened mode="side" position="end">
       <div class="navigator">
+          <div class="profile">
+            <img src="../../assets/images/vetor-people.png" alt="imagem futura do medico" width="40%">
+            <span class="name">Nome do individuo</span>
+          </div>
+          
 
-          <h1 class="title">DOCWAY</h1>
-    
-          <button class="button" mat-button> <div class="button-content"><mat-icon aria-label="Example home icon">home</mat-icon> HOME</div> </button>
-          <button class="button" mat-button> <div class="button-content"><mat-icon aria-label="Example home icon">people</mat-icon> MEDICS</div> </button>
-    
-          <button mat-raised-button class="contact-button">CONTACT US</button>  
+      
+          <button class="buttonO" mat-button>Profile </button>
+      
+          <button class="buttonO" mat-button>Edit Profile</button>
+
+          <button class="buttonO" mat-button>Latest Hires</button>
+      
+          <button class="buttonO" mat-button>Sing Out</button>
+          
     
         </div> 
   </mat-sidenav>
-  Implicit main content
+  <div class="main-content">
+    <h1>Search for doctors ...</h1>
+    <div class="seach">
+        <mat-form-field appearance="fill"  class="input">
+          <mat-label>Specialization</mat-label>
+          <input matInput placeholder="Ex. Cardiologist" >  
+        </mat-form-field>
+
+        <h3>and </h3>
+        <mat-form-field appearance="fill"  class="input">
+          <mat-label>City</mat-label>
+          <input matInput placeholder="Campina Grande"   >  
+          </mat-form-field>
+        </div>   
+  </div>
 </mat-sidenav-container>
