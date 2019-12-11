@@ -1,102 +1,129 @@
-<div class="container">
 
-    <mat-icon (click)="goback()" class="goback" aria-label="Example home icon">reply</mat-icon>
+    <mat-grid-list cols=10 rowHeight="100%">
+           
+          <mat-grid-tile
+            [colspan]=3
+            class="register"
+            >
     
-    <div class="box">
-        <h1>Você é ?</h1>
-        <mat-tab-group>
-            <mat-tab label="Doctor"  class="tabs"> 
-                <div class="tabs">
-                <mat-form-field appearance="outline" class="inputs">
-                    <mat-label>Full name</mat-label>
-                    <input matInput placeholder="Full name">
+            <div class="registerPainel">
+              <h1 class="titleR">Welcome Back!</h1>
+              <h3 class="subtitleR">Enter your personal details</h3>
+             
+              <h3 class="subtitleR">and start journey with us</h3>
+          
+              <button mat-stroked-button  class="singUp" (click)="goBack()">SING IN</button>
+            </div>
+            
+          </mat-grid-tile>
+
+           <mat-grid-tile
+            [colspan]=7>
+            <div class="login">
+               
+                <h1 class="title">Create Account</h1>
+
+            <mat-radio-group aria-label="Select an option" color="primary" class="radio-group" [(ngModel)]="value">
+                    <mat-radio-button value="1" class="radio">Doctor</mat-radio-button>
+                    <mat-radio-button value="2">Hospital</mat-radio-button>
+              
+                </mat-radio-group>
+            <div *ngIf="isDoctor()">    
+                <div >
+                    <mat-form-field appearance="fill" class="input" >
+                      <mat-label>Name</mat-label >
+                      <input matInput placeholder="Willian D."  >
                     </mat-form-field>
-
-                <mat-form-field appearance="outline" class="inputs">
-                    <mat-label>Email</mat-label>
-                    <input matInput placeholder="email@email.com" type="email">
+                    </div>
+                <div >
+                    <mat-form-field appearance="fill" class="input" >
+                      <mat-label>Email</mat-label >
+                      <input matInput placeholder="email@email.com" type="email" >
                     </mat-form-field>
-
-                <mat-form-field appearance="outline" class="inputs">
-                    <mat-label>Password</mat-label>
-                    <input matInput placeholder="password" type="password">
+                    </div>
+                <div >
+                    <mat-form-field appearance="fill"  class="input">
+                      <mat-label>Password</mat-label>
+                      <input matInput placeholder="password" type="password"  >  
                     </mat-form-field>
-
-                <mat-form-field appearance="outline" class="inputs">
-                    <mat-label>Confirm password</mat-label>
-                    <input matInput placeholder="password" type="password">
+                    </div>    
+                <div >
+                    <mat-form-field appearance="fill"  class="input">
+                      <mat-label>Phone</mat-label>
+                      <input matInput placeholder="DDD XXXXX-XXXX" type="number"  >  
                     </mat-form-field>
-
-                <mat-form-field appearance="outline" class="inputs">
-                    <mat-label>Phone</mat-label>
-                    <input matInput placeholder="ddd + number" type="number">
-                    </mat-form-field> 
-
-                <mat-form-field appearance="outline" class="inputs">        
-                    <mat-label>Specialization</mat-label>
-                    <input matInput placeholder="Ex. Cardiologist">
+                    </div>   
+                <div >
+                    <mat-form-field appearance="fill"  class="input">
+                      <mat-label>CRM</mat-label>
+                      <input matInput placeholder="CRM" type="number"  >  
                     </mat-form-field>
+                    </div>  
+                <div >
+                    <mat-form-field appearance="fill" class="input" >
+                      <mat-label>Specialization</mat-label >
+                      <input matInput placeholder="Cardiologist"  >
+                    </mat-form-field>
+                    </div>      
+                <div >
+                    <mat-form-field appearance="fill" class="input" >
+                      <mat-label>City</mat-label >
+                      <input matInput placeholder="Campina Grande"  >
+                    </mat-form-field>
+                    </div>           
+                <div > 
 
-                <mat-form-field appearance="outline" class="inputs">  
-                    <mat-label>CRM</mat-label>
-                    <input matInput placeholder="CRM">
-                    </mat-form-field>  
-
-                <mat-form-field appearance="outline" class="inputs">  
-                    <mat-label>City</mat-label>
-                    <input matInput placeholder="Ex. Campina Grande">
-                    </mat-form-field> 
-                
+                    <button mat-raised-button color="primary" class="button" (click)="goBack()">SING UP</button>   
                 </div>
-
-                <button mat-stroked-button color="primary" class="confirm_button">Confirm</button>   
-                    
-            </mat-tab>
-            <mat-tab label="Hospital"> 
-                    <div class="tabs">
-                            <mat-form-field appearance="outline" class="inputs">
-                                <mat-label>Institucional name</mat-label>
-                                <input matInput placeholder="Full name">
-                                </mat-form-field>
+            </div>  
             
-                            <mat-form-field appearance="outline" class="inputs">
-                                <mat-label>Email</mat-label>
-                                <input matInput placeholder="email@email.com" type="email">
-                                </mat-form-field>
+            <div *ngIf="isHospital()">    
+                    <div >
+                        <mat-form-field appearance="fill" class="input" >
+                          <mat-label>Name</mat-label >
+                          <input matInput placeholder="Hospital of Campina Grande"  >
+                        </mat-form-field>
+                        </div>
+                    <div >
+                        <mat-form-field appearance="fill" class="input" >
+                          <mat-label>Email</mat-label >
+                          <input matInput placeholder="email@email.com" type="email" >
+                        </mat-form-field>
+                        </div>
+                    <div >
+                        <mat-form-field appearance="fill"  class="input">
+                          <mat-label>Password</mat-label>
+                          <input matInput placeholder="password" type="password"  >  
+                        </mat-form-field>
+                        </div>    
+                    <div >
+                        <mat-form-field appearance="fill"  class="input">
+                          <mat-label>Phone</mat-label>
+                          <input matInput placeholder="DDD XXXXX-XXXX" type="number"  >  
+                        </mat-form-field>
+                        </div>   
+                    <div >
+                        <mat-form-field appearance="fill"  class="input">
+                          <mat-label>CPNJ</mat-label>
+                          <input matInput placeholder="xx.xxx.xxx/xxxx-xx" type="number"  >  
+                        </mat-form-field>
+                        </div>     
+                    <div >
+                        <mat-form-field appearance="fill" class="input" >
+                          <mat-label>City</mat-label >
+                          <input matInput placeholder="Campina Grande"  >
+                        </mat-form-field>
+                        </div>           
+                    <div > 
+    
+                        <button mat-raised-button color="primary" class="button" (click)="goPainel()">SING UP</button>   
+                    </div>
+                </div>  
+                
+            </div>
+          </mat-grid-tile>
             
-                            <mat-form-field appearance="outline" class="inputs">
-                                <mat-label>Password</mat-label>
-                                <input matInput placeholder="password" type="password">
-                                </mat-form-field>
             
-                            <mat-form-field appearance="outline" class="inputs">
-                                <mat-label>Confirm password</mat-label>
-                                <input matInput placeholder="password" type="password">
-                                </mat-form-field>
-            
-                            <mat-form-field appearance="outline" class="inputs">
-                                <mat-label>Phone</mat-label>
-                                <input matInput placeholder="ddd + number" type="number">
-                                </mat-form-field> 
-            
-                            <mat-form-field appearance="outline" class="inputs">        
-                                <mat-label>CNPJ</mat-label>
-                                <input matInput placeholder="xx.xxx.xxx/xxxx-xx">
-                                </mat-form-field>
-            
-                            <mat-form-field appearance="outline" class="inputs">  
-                                <mat-label>City</mat-label>
-                                <input matInput placeholder="Ex. Campina Grande">
-                                </mat-form-field> 
-                            
-                            </div>
-            
-                            <button mat-stroked-button color="primary" class="confirm_button">Confirm</button>   
-            </mat-tab>
-        </mat-tab-group>
-         
-      
-    </div>
-    </div>
+          </mat-grid-list>
     
     

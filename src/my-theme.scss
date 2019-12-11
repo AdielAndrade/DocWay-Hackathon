@@ -2,7 +2,41 @@
 
 @include mat-core();
 
-$primary: mat-palette($mat-cyan);
+$md-docwaytheme: (
+    50 : #eaf6f6,
+    100 : #cbe7ea,
+    200 : #a8d8dc,
+    300 : #85c8cd,
+    400 : #6bbcc3,
+    500 : #51b0b8,
+    600 : #4aa9b1,
+    700 : #40a0a8,
+    800 : #3797a0,
+    900 : #278791,
+    A100 : #d2faff,
+    A200 : #9ff5ff,
+    A400 : #6cf0ff,
+    A700 : #52edff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+
+$primary: mat-palette($md-docwaytheme);
 $accent:  mat-palette($mat-red, A200, A100, A400);
 
 $theme: mat-light-theme($primary, $accent);

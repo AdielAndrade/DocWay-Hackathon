@@ -10,6 +10,16 @@ export class RegisterComponent implements OnInit {
 
   constructor(private _router: Router) { }
 
+  value : string;
+
+  isDoctor(){
+    return this.value === "1"
+  }
+
+  isHospital(){
+    return this.value === "2"
+  }
+
   ngOnInit() {
   }
 
