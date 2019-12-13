@@ -37,7 +37,7 @@ import {RegisterService } from './register/register.service'
     MaterialModule,
     ScrollingModule
   ],
-  providers: [LoginService,RegisterService, PainelComponent],
+  providers: [LoginService,RegisterService, PainelService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
