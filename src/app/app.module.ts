@@ -11,7 +11,13 @@ import { MaterialModule } from './material/material.module';
 import { ScrollingModule} from '@angular/cdk/scrolling';
 import { PainelComponent } from './painel/painel.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { AboutUsComponent } from './about-us/about-us.component'
+import { AboutUsComponent } from './about-us/about-us.component';
+
+import {LoginService } from './login/login.service';
+import {PainelService } from './painel/painel.service';
+import {RegisterService } from './register/register.service'
+
+
 
 
 @NgModule({
@@ -31,7 +37,7 @@ import { AboutUsComponent } from './about-us/about-us.component'
     MaterialModule,
     ScrollingModule
   ],
-  providers: [],
+  providers: [LoginService,RegisterService, PainelComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
