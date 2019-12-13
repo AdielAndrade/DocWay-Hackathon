@@ -8,4 +8,12 @@ import { url } from '../app.api'
 export class PainelService {
 
   constructor(private http: HttpClient) { }
+
+  search( location :String, specialization : String){
+
+  }
+
+  call( id : String){
+
+  }
 }

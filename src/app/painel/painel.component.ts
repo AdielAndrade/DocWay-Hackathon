@@ -14,8 +14,15 @@ export class PainelComponent implements OnInit {
   ngOnInit() {
   }
 
+  showSearch = true;
+
   logout(){
     this._router.navigate(['/home'])
+
+  }
+
+  search(){
+    this.showSearch = !this.search
 
   }
 

@@ -8,4 +8,8 @@ import { url } from '../app.api'
 export class LoginService {
 
   constructor(private http: HttpClient) { }
+
+  login(){
+    
+  }
 }

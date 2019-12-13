@@ -45,7 +45,8 @@
     
         </div> 
   </mat-sidenav>
-  <div class="main-content">
+  <div class="main-content" *ngIf="showSearch">
+    <div>
     <h1 class="main-title">Search for doctor's ...</h1>
     <div class="seach">
         <mat-form-field appearance="outline" class="input1">
@@ -62,7 +63,9 @@
         </div>   
 
         <div > 
-            <button mat-raised-button color="primary" class="search-button" >SEARCH</button>   
+            <button mat-raised-button color="primary" class="search-button" (click)="search()">SEARCH</button>   
         </div>
+
+      </div>
   </div>
 </mat-sidenav-container>
