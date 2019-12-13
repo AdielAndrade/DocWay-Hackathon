@@ -1,1 +1,1 @@
-export const url = "docway-api.herokuapp.com/api"
+export const url = "www.docway-api.herokuapp.com/api/"

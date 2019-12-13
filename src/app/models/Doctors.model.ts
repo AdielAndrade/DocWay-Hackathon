@@ -6,6 +6,7 @@ export class Doctors {
     public city: string;
     public password: string;
     public crm: string;
+    public phone: string;
     public specialization: string;
     public createdAt: string;
 
@@ -20,6 +21,7 @@ export class Doctors {
         city: string, 
         password: string, 
         crm: string, 
+        phone: string,
         specialization: string, 
         createdAt: string,
        ){
@@ -30,6 +32,7 @@ export class Doctors {
          this.city =city;
          this.password =password;
          this.crm=crm;
+         this.phone =phone,
          this.specialization =specialization;
          this.createdAt =createdAt;
 

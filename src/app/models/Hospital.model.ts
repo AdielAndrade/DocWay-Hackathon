@@ -6,6 +6,7 @@ export class Hospital {
     public city: string;
     public password: string;
     public cnpj: string;
+    public phone: string;
     public createdAt: string;
 
 
@@ -19,6 +20,7 @@ export class Hospital {
         city: string, 
         password: string, 
         cnpj: string, 
+        phone: string,
         createdAt: string,
        ){
   
@@ -28,6 +30,7 @@ export class Hospital {
          this.city =city;
          this.password =password;
          this.cnpj=cnpj;
+         this.phone =phone,
          this.createdAt =createdAt;
 
   
